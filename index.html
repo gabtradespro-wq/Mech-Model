@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trading Checklist</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px;
+    }
+    .container {
+      width: 600px;
+      background: #2b2b3c;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .checklist-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #3a3a4d;
+      padding: 12px;
+      margin-bottom: 12px;
+      border-radius: 8px;
+    }
+    .checklist-item input {
+      margin-right: 10px;
+    }
+    .priority {
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .high { background: #ff4d4f; }
+    .medium { background: #faad14; }
+    .low { background: #52c41a; }
+    .nopriority { background: #8c8c8c; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Trading Checklist</h1>
+
+    <div class="checklist-item">
+      <label><input type="checkbox"> HTF FVG INVERSION - (WITHOUT TAKING INTERNAL H/L OR BEING NEAR AN IMMEDIATE FVG)</label>
+      <span class="priority high">High</span>
+    </div>
+
+    <div class="checklist-item">
+      <label><input type="checkbox"> SWEEP SIGNIFICANT LIQUIDITY - (SESSION H/L, HTF FVG, OR SIGNIFICANT SWING H/L)</label>
+      <span class="priority high">High</span>
+    </div>
+
+    <div class="checklist-item">
+      <label><input type="checkbox"> LTF IMMEDIATE DOL PRESENT - (EQH/EQL, REQH/REQL, LRL, DEVILS MARK, ETC.)</label>
+      <span class="priority medium">Medium</span>
+    </div>
+
+    <div class="checklist-item">
+      <label><input type="checkbox"> HTF IFVG ENTRY - (WITHIN HTF AND LTF PREMIUM OR DISCOUNT)</label>
+      <span class="priority medium">Medium</span>
+    </div>
+
+    <div class="checklist-item">
+      <label><input type="checkbox"> SMT INSIDE OF HTF PDARRAY - (15M, 1HR, 4HR, 1D)</label>
+      <span class="priority low">Low</span>
+    </div>
+
+    <div class="checklist-item">
+      <label><input type="checkbox"> EQH/EQL - (WITHIN A 5M/15M UNFILLED FVG OR TOWARDS DOL)</label>
+      <span class="priority low">Low</span>
+    </div>
+
+    <div class="checklist-item">
+      <label><input type="checkbox"> LTF SMT - (AT ENTRY POINT)</label>
+      <span class="priority nopriority">No Priority</span>
+    </div>
+
+    <div class="checklist-item">
+      <label><input type="checkbox"> B/E POINT AFTER ENTRY</label>
+      <span class="priority nopriority">No Priority</span>
+    </div>
+
+  </div>
+</body>
+</html>
